@@ -66,36 +66,75 @@
     </a>
    </div>
   </div>
-  <div class="banner">
-  </div>
+  <!--compare-->
   <div class="content">
-   <div class="product-grid">
-    <div class="product-item">
-     <img alt="Product Image" src="https://storage.googleapis.com/a1aa/image/hPkolhR0jFqyFxKUMJnEzM7IMeIbTcecLHzzVgIsy3oq7SnTA.jpg"/>
-     <p>
-      Sản phẩm 1
-     </p>
+    <h2>BẢNG SO SÁNH SẢN PHẨM</h2>
+    <div class="product-info">
+      <table>
+        <tr>
+            <th></th>
+            <th><div class="product-item">
+                <button onclick="openSearch()">Lựa chọn vợt</button>
+              </div>
+            <pre>ten vot</pre></th>
+            <th><div class="product-item">
+                <button onclick="openSearch()">Lựa chọn vợt</button>
+              </div>
+              <pre>ten vot</pre></th>
+        </tr>
+        <tr>
+          <th>Trình Độ Chơi:</th>
+          <td>Mới Chơi</td>
+          <td>Mới Chơi</td>
+        </tr>
+        <tr>
+          <th>Chiều dài vợt:</th>
+          <td>675 mm</td>
+          <td>675 mm</td>
+        </tr>
+        <tr>
+          <th>Nội Dung Chơi:</th>
+          <td>Cả Đơn và Đôi</td>
+          <td>Cả Đơn và Đôi</td>
+        </tr>
+        <tr>
+          <th>Phong Cách Chơi:</th>
+          <td>Công Thủ Toàn Diện</td>
+          <td>Công Thủ Toàn Diện</td>
+        </tr>
+        <tr>
+          <th>Độ Cứng Đũa:</th>
+          <td>Trung Bình</td>
+          <td>Trung Bình</td>
+        </tr>
+        <tr>
+          <th>Điểm Cân Bằng:</th>
+          <td>Nhẹ Đầu</td>
+          <td>Nhẹ Đầu</td>
+        </tr>
+        <tr>
+          <th>Trọng Lượng:</th>
+          <td>4U: 80 - 84g</td>
+          <td>4U: 80 - 84g</td>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <br>
     </div>
-    <div class="product-item">
-     <img alt="Product Image" src="https://storage.googleapis.com/a1aa/image/hPkolhR0jFqyFxKUMJnEzM7IMeIbTcecLHzzVgIsy3oq7SnTA.jpg"/>
-     <p>
-      Sản phẩm 2
-     </p>
-    </div>
-    <div class="product-item">
-     <img alt="Product Image" src="https://storage.googleapis.com/a1aa/image/hPkolhR0jFqyFxKUMJnEzM7IMeIbTcecLHzzVgIsy3oq7SnTA.jpg"/>
-     <p>
-      Sản phẩm 3
-     </p>
-    </div>
-    <div class="product-item">
-     <img alt="Product Image" src="https://storage.googleapis.com/a1aa/image/hPkolhR0jFqyFxKUMJnEzM7IMeIbTcecLHzzVgIsy3oq7SnTA.jpg"/>
-     <p>
-      Sản phẩm 4
-     </p>
-    </div>
-   </div>
   </div>
+  
+  <div class="modal" id="searchModal">
+    <div class="modal-content">
+      <input type="text" placeholder="Tìm sản phẩm..." />
+      <button onclick="closeSearch()">Chọn</button>
+    </div>
+  </div>
+  
+  <script src="Compare.js">
+    
+  </script>
+  
   <div class="footer">
    <div class="container">
     <div class="column">

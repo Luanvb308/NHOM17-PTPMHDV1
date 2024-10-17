@@ -115,9 +115,27 @@ body {
     justify-content: center;
     margin-bottom: 20px;
 }
+.content .contact img{
+    width: 400px;
+}
+.content .position img{
+    margin-left: 50px;
+}
+.content .position{
+    width: 50%;
+    margin-left: 250px;
+}
+.content .contact{
+    width: 50%;
+    margin-left: 100px;
+}
+.content pre{
+    font: 1em sans-serif;
+}
 .content {
-    flex-grow: 1;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding: 50px;
     background-color: #f5f5f5;
 }
 .product-grid {
