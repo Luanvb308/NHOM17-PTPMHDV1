@@ -242,3 +242,46 @@ body {
 .cart-button:hover {
     background-color: #218838;
 }
+.icon {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px; /* Khoảng cách giữa các biểu tượng */
+    cursor: pointer; /* Thêm con trỏ tay khi hover */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+.icon:hover {
+    color: #007BFF; /* Thay đổi màu sắc khi hover */
+}
+
+.dropdown {
+    display: none; /* Ẩn mặc định */
+    position: absolute;
+    top: 100%; /* Đặt nó ngay dưới biểu tượng */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bo góc */
+    z-index: 1;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; /* Hiệu ứng chuyển động */
+}
+
+.icon:hover .dropdown {
+    display: block; /* Hiện khi hover */
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px; /* Tăng khoảng cách cho dễ nhấn */
+    color: black;
+    text-decoration: none;
+    border-radius: 3px; /* Bo góc cho các liên kết */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển nền */
+}
+
+.dropdown a:hover {
+    background-color: #007BFF; /* Nền khi hover */
+    color: white; /* Đổi màu chữ khi hover */
+}
