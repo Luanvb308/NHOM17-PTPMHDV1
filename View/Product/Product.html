@@ -1,0 +1,603 @@
+<html>
+
+<head>
+    <title>
+        Product
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Product/Product1/assets/css/style.css">
+    <link rel="stylesheet" href="/Home/assets/fonts/themify-icons/themify-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <img alt="Duck Logo" height="40" src="/Home/assets/img/logo.svg" width="40" />
+            </div>
+            <div class="contact-info">
+                <i class="fas fa-phone-alt">
+                </i>
+                0123456789
+            </div>
+            <div class="search-bar">
+                <input placeholder="Tìm sản phẩm..." type="text" />
+                <i class="fas fa-search">
+                </i>
+            </div>
+            <div class="icons">
+                <div class="icon">
+                    <i class="fas fa-exchange-alt">
+                    </i>
+                    <span>
+                        So sánh
+                    </span>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-user">
+                    </i>
+                    <span>
+                        Tài khoản
+                    </span>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-shopping-cart">
+                    </i>
+                    <span>
+                        Giỏ hàng
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="container">
+            <a href="#">
+                TRANG CHỦ
+            </a>
+            <a href="#">
+                SẢN PHẨM
+            </a>
+            <a href="#">
+                SALE OFF
+            </a>
+            <a href="#">
+                GIỚI THIỆU
+            </a>
+            <a href="#">
+                LIÊN HỆ
+            </a>
+        </div>
+    </div>
+    <div class="product-info">
+        <div class="container">
+            <div class="row">
+                <div class="product-sort col-4">
+                    <div class="product-sort-wrap">
+                        <h3>Chọn mức giá</h3>
+                        <input type="checkbox"> Giá dưới 500.000đ <br>
+                        <input type="checkbox"> 500.000đ - 1 triệu <br>
+                        <input type="checkbox" name="" id=""> 1 - 2 triệu <br>
+                        <input type="checkbox" name="" id=""> 2 - 3 triệu <br>
+                        <input type="checkbox"> Giá trên 3 triệu
+                        <h3>Thương hiệu</h3>
+                        <input type="checkbox"> Yonex
+                        <h3>Chi nhánh</h3>
+                        <input type="checkbox"> VNB PREMIUM Quận 1 <br>
+                        <input type="checkbox"> VNB PREMIUM Quận 11 <br>
+                        <input type="checkbox"> VNB PREMIUM Bình Thạnh <br>
+                        <input type="checkbox"> VNB PREMIUM TP Thủ Đức <br>
+                        <input type="checkbox"> VNB PREMIUM Ninh Kiều Cần Thơ <br>
+                        <h3>Chiều dài vợt</h3>
+                        <input type="checkbox"> 665mm <br>
+                        <input type="checkbox"> 670mm <br>
+                        <input type="checkbox"> 675mm <br>
+                        <h3>Chiều dài cán vợt</h3>
+                        <input type="checkbox"> 200mm <br>
+                        <input type="checkbox"> 205mm <br>
+                        <input type="checkbox"> 210mm <br>
+                        <h3>Swingweight</h3>
+                        <input type="checkbox"> Dưới 82 kg/cm2 <br>
+                        <input type="checkbox"> 82-84 kg/cm2 <br>
+                        <input type="checkbox"> 84-86 kg/cm2 <br>
+                        <input type="checkbox"> 86-88 kg/cm2 <br>
+                        <input type="checkbox"> Trên 88 kg/cm2 <br>
+                        <h3>Trọng lượng</h3>
+                        <input type="checkbox"> 2U: 90 - 94g <br>
+                        <input type="checkbox"> 3U: 85 - 89g <br>
+                        <input type="checkbox"> 4U: 80 - 84g <br>
+                        <input type="checkbox"> 5U: 75 - 79g <br>
+                        <input type="checkbox"> F: 70 - 74g <br>
+                        <input type="checkbox"> 2F: 65 - 69g <br>
+                        <h3>Điểm cân bằng</h3>
+                        <input type="checkbox"> Nhẹ Đầu <br>
+                        <input type="checkbox"> Cân Bằng <br>
+                        <input type="checkbox"> Hơi Nặng Đầu <br>
+                        <input type="checkbox"> Nặng Đầu <br>
+                        <input type="checkbox"> Siêu Nặng Đầu <br>
+                        <h3>Độ cứng đũa</h3>
+                        <input type="checkbox"> Dẻo <br>
+                        <input type="checkbox"> Trung Bình <br>
+                        <input type="checkbox"> Cứng <br>
+                        <input type="checkbox"> Siêu Cứng <br>
+                        <h3>Phong cách chơi</h3>
+                        <input type="checkbox"> Dẻo <br>
+                        <input type="checkbox"> Trung Bình <br>
+                        <input type="checkbox"> Cứng <br>
+                        <input type="checkbox"> Siêu Cứng <br>
+                        <h3>Nội dung chơi</h3>
+                        <input type="checkbox"> Đánh đơn <br>
+                        <input type="checkbox"> Đánh đôi <br>
+                        <input type="checkbox"> Cả Đơn và Đôi <br>
+                        <h3>Trình độ chơi</h3>
+                        <input type="checkbox"> Mới Chơi <br>
+                        <input type="checkbox"> Trung Bình <br>
+                        <input type="checkbox"> Khá Tốt <br>
+                        <h3>Công nghệ</h3>
+                        <input type="checkbox"> AERO FRAME <br>
+                        <input type="checkbox"> AERO+BOX FRAME <br>
+                        <input type="checkbox"> BLACK MICRO CORE <br>
+                        <input type="checkbox"> BOX FRAME <br>
+                        <input type="checkbox"> BUILT-IN T-JOINT <br>
+                        <input type="checkbox"> COMPACT FRAME <br>
+                        <h3>Danh mục sản phẩm</h3>
+                        <a href="">Vợt cầu công Yonex</a> <br>
+                        <a href="">Vợt cầu công Victor</a><br>
+                        <a href="">Vợt cầu công Lining</a><br>
+                        <a href="">Vợt cầu công Mizuno</a><br>
+                        <a href="">Vợt cầu công Apacs</a><br>
+                        <a href="">Vợt cầu công VNB</a><br>
+                        <a href="">Vợt cầu công Proace</a><br>
+                        <a href="">Vợt cầu công Forca</a><br>
+                        <a href="">Vợt cầu công FlyPower</a><br>
+                        <a href="">Vợt cầu công Tenway</a>
+                    </div>
+                </div>
+                <div class="product-list col-8">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="/Product/Product1/assets/img/logo-item-yonex/voltric.jpg" style="width: 270px; height: 54px; border: #000 solid 1px;" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="/Product/Product1/assets/img/logo-item-yonex/arcsaber.jpg" style="width: 270px; height: 54px; border: #000 solid 1px;" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="/Product/Product1/assets/img/logo-item-yonex/astrox_1.png" style="width: 270px; height: 54px; border: #000 solid 1px;" alt="">
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 20px;">
+                        <div class="col-4">
+                            <img src="/Product/Product1/assets/img/logo-item-yonex/duora_1.jpg" style="width: 270px; height: 54px; border: #000 solid 1px;" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="/Product/Product1/assets/img/logo-item-yonex/nanoflare.png" style="width: 270px; height: 54px; border: #000 solid 1px;" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="/Product/Product1/assets/img/logo-item-yonex/nanoray_1.jpg" style="width: 270px; height: 54px; border: #000 solid 1px;" alt="">
+                        </div>
+                    </div>
+                    <div class="title" >
+                        <h1>Vợt cầu lông Yonex</h1>
+                    </div>
+                    <div class="product-show">
+                        <div class="row">
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-700-game-silver-sky-blue-chinh-hang_1725409054.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                        
+                        </div>
+                        <div class="row">
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                        
+                        </div>
+                        <div class="row">
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                        
+                        </div>
+                        <div class="row">
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                        
+                        </div>
+                        <div class="row">
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                            <div class="product-item col-3">
+                                <img src="/Product/Product1/assets/img/product-item-yonex/vot-cau-long-yonex-nanoflare-starbucks-xanh-noi-dia-trung_1728956640.webp" alt="">
+                                <p style="width: 212px;">Vợt cầu lông Yonex Nanoflare Starbucks
+                                    <br>
+                                    <span style="color: #e8002d; font-weight: bold; font-size: 16px;">1.590.000 đ</span>
+                                </p>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="page-link row" style="">
+                        <a href="">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">4</a>
+                        <a href="">5</a>
+                        <a href="">6</a>
+                        <a href="">7</a>
+                        <a href="">8</a>
+                        <a href="">>></a>
+                    </div>
+                    <div class="product-description">
+                        <p>Vợt cầu lông Yonex luôn là lựa chọn của các tay vợt chuyên nghiệp, cũng như nhiều bạn yêu thích cầu lông Việt Nam. Vậy để mua vợt cầu lông Yonex chính hãng ở đâu tốt nhất? Bộ vợt cầu lông xịn nào thích hợp cho mình? Hãy tham khảo bài viết về vợt Yonex sau để trả lời câu hỏi cho mình nhé!</p>
+                        <h3>Hình thành và phát triển của hãng vợt cầu lông Yonex</h3>
+                        <p>Hãng vợt Yonex ra đời năm 1946 tại Nhật, xuất thân chỉ từ xưởng nhỏ. Ban đầu, hoạt động với một máy duy nhất. Sau khi sản xuất thành công công nghệ làm gỗ, hãng đã cho ra đời cây vợt cầu lông Yonex đầu tiên vào năm 1957. Đến nay, vợt Yonex đã trở thành hãng bán vợt cầu lông hàng đầu thế giới.</p>
+                        <p>Không dừng lại, hãng vợt cầu lông Yonex tiếp tục cho ra những sản phẩm bộ cầu lông xịn để phục vụ môn cầu lông. Như giày cầu lông Yonex với chất lượng cực cao, quần áo Yonex với thiết kế thời trang, những phụ kiện, quấn cán Yonex cũng là những lựa chọn tối ưu nhất</p>
+                        <p>Hiện nay, ở thị trường Yonex Việt Nam rất nhiều bạn mua vợt Yonex tìm đến những bộ cầu lông xịn phù hợp với mình. Như thiên về sức mạnh thì có Vợt cầu lông Yonex Voltric 7. Chuyên về đánh nhanh, phản tạt mạnh mẽ với Yonex NanoSpeed 9900. Yonex Voltric 70 và Yonex Voltric 80 thiết kế đầu nặng dành cho tấn công. Trong khi đó, Yonex Duora 10 là dòng vợt kiểm soát cầu, công thủ toàn diện. Yonex ArcSaber 11 thiên về điều cầu và kiểm soát trận đấu.</p>
+                        <h3>Vợt cầu lông Yonex và những hãng vợt tương đồng khác</h3>
+                        <p>Ngoài vợt cầu lông Yonex hiện đang độc tôn số 1 trên thị trường. Một số hãng với chất lượng tuyệt vời cũng được ưu tiên lựa chọn hàng đầu như Vợt cầu lông Victor với độ hoàn mỹ cực cao. Hãng được mệnh danh là hoàng tử thế giới - vợt cầu lông Lining. Thêm đó, vợt cầu lông Proace đã được kiểm chứng chất lượng với sự lâu đời của mình. Hoặc được tin dùng tuyệt đối tại Việt Nam như vợt Forza. Với Apacs, Fleet là các dòng vợt cầu lông giá rẻ được lựa chọn khá nhiều.</p>
+                        <h3>Các dòng vợt cầu lông Yonex tiêu biểu hiện nay</h3>
+                        <p>Các sản phẩm Vợt cầu lông Yonex được hãng thiết kế đa dạng, phù hợp với từng phong cách, lối chơi của người sử dụng. Hiện nay, những sản phẩm vợt cầu lông Yonex sẽ được chia làm 3 phân khúc: phân khúc cao cấp, phân khúc tầm trung và phân khúc vợt cầu lông giá rẻ hướng đến các đối tượng người chơi là người chơi chuyên nghiệp hay người chơi phong trào, người mới chơi.</p>
+                        <p>Các sản phẩm của hãng Yonex cũng được chia theo phong cách của từng người chơi như: Dòng vợt cầu lông Yonex chuyên công, vợt cầu lông Yonex công thủ toàn diện, vợt cầu lông Yonex phòng thủ, phản tạt. Không quá khó để chúng ta có thể tìm kiếm cho mình một cây vợt cầu lông Yonex phù hợp với phong cách chơi cũng như túi tiền của chính mình.</p>
+                        <p>Hãng vợt cầu lông Yonex luôn không ngừng cải tiến và phát triển thêm nhiều dòng sản phẩm khác nhau để mang đến cho người chơi nhiều sự chọn lựa tốt nhất. Chúng ta phải kể đến một số dòng sản phẩm từ hồi xưa như: Muscle Power, Isometric, Carbonex, Arcsaber, Nanoray, Voltric, Duora…Và hiện tại có 2 dòng vợt Yonex mới nhất và phổ biến nhất đó là Astrox Và Nanoflare. Bên canh những dòng vợt cho người lớn chơi thì hãng cũng có 1 dòng vợt cho trẻ em đó là dòng Junior. Cùng shopVNB điểm qua 1 số dòng vợt cầu lông Yonex hot nhất trên thị trường hiện nay nhé!</p>
+                        <h3>Dòng vợt cầu lông Yonex ASTROX</h3>
+                        <p>Dòng vợt cầu lông xịn Yonex ASTROX được xem là phiên bản nâng cấp hơn của dòng vợt Voltric. Dòng vợt Astrox mang thiên hướng tấn công nặng đầu nhất của Yonex hiện nay với thiết kế “Steep Attack” với khả năng đập cầu cao hơn. Vật liệu tạo nên dòng vợt astrox cũng khá đặc biệt với vật liệu Namd hoặc Nanomesh Neo được Yonex sử dụng trong vợt tạo ra các pha chuyển động linh hoạt nhưng không kém phần chắc chắn. Một cú Snapback với tốc độ kinh ngạc, đồng thời giải phóng lực một cách mạnh mẽ. Rotational Generator System là một công nghệ sử dụng thuyết đối trọng cho anh phép anh em tiếp cầu và nhanh chóng trở lại vị trí trung tâm một cách nhanh chóng.</p>
+                        <p>Dòng vợt cầu lông Yonex Astrox là một sự lựa chọn lý tưởng dành cho người chơi có lối đánh thiên công. Dòng vợt cầu lông này nổi tiếng với nhiều cây vợt xịn như Astrox 77, vợt cầu lông yonex chính hãng Astrox 88d pro , Astrox 99 và mới nhất là sản phẩm Astrox 77 pro.</p>
+                        <p>Một số tay vợt nổi tiếng mang lại thành công cho dòng vợt này như: KENTO MOMOTA, VIKTOR AXELSEN, CHEN YU FEI, AKANE YAMAGUCHI.</p>
+                        <h3>Dòng vợt cầu lông Yonex Nanoflare</h3>
+
+                        <p>Nanoflare là dòng vợt cầu lông của Yonex thiên về tốc độ, khung vợt mỏng và nhẹ đầu giúp cho tốc độ vung vợt nhanh nhất, phù hợp với lối đánh phản tạt nhanh và điều cầu. </p>
+                        <p>Một số công nghệ trên dòng vợt Nanoflare như: Công nghệ ISOMETRIC giúp mở rộng tối đa điểm ngọt trên vợt. Công nghệ NANOMETRIC cải thiện độ bền liên kết giữa các sợi carbon giúp sản phẩm cải thiện độ bền. Ngoài ra thì vẫn trang bị những công nghệ mới nhất của hãng vợt cầu lông Yonex hiện này như: NAMD, công nghệ SONIC METRAL, AERO Frame, Sonic Flare System, Ultra Slim Shaft...</p>
+                        <p>Một số sản phẩm vợt cầu lông Yonex thuộc dòng nanoflare đang được rất nhiều người chơi lựa chọn phải kể đến như: NANOFLARE 800, NANOFLARE 800 LT, NANOFLARE 700, NANOFLARE 600. Và một số vợt vợt giá rẻ cho người mới chơi như NANOFLARE 270 SPEED, NANOFLARE 001 ABILITY, NANOFLARE DRIVE.</p>
+                        <p>Một số tay vợt nổi tiếng mang lại thành công cho dòng vợt này như: CAROLINA MARIN, RATCHANOK INTANON, DECHAPOL PUAVARANUKROH, JIA YI FAN.</p>
+                        <h3>Dòng vợt cầu lông Yonex Voltric</h3>
+                        <p>Dòng vợt cầu lông Yonex Voltric là một trong những dòng vợt nổi tiếng nhất của Yonex đã có từ rất lâu đời và cũng được nhiều các vận động viên nổi tiếng tin dùng như Lee Chong Wei, Lin Dan,…Dòng vợt Voltric là dòng vợt thiên về tấn công của Yonex theo đúng nghĩa Voltric, dòng vợt này phù hợp cho những những người có lối chơi áp đảo thiên về sức mạnh, đánh cầu sau. </p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Dòng vợt Voltric thường là có thân vợt cứng nặng, khung vợt có sức chịu lực cao hơn các dòng khác. Đặc biệt trên các cây vợt cầu lông Yonex Voltric được trang bị công nghệ làm nên thương hiệu này chính là TRI-VOLTAGE SYSTEM.</span></span></p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Một số sản phẩm vợt cầu lông Yonex thuộc dòng nanoflare đang được rất nhiều người chơi lựa chọn phải kể đến như: Yonex voltric 7, Voltric Z-Force II, Vợt Cầu Lông Yonex Voltric 70 Etune...Bên cạnh đó thì cũng có 1 số dòng giá rẻ cho người mới chơi như: Vợt Cầu Lông Yonex Voltric LT 25I, Vợt Cầu Lông Yonex Voltric LT 20I.</span></span></p>
+                        <h3 style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><strong>Dòng vợt cầu lông Yonex Arcsaber</strong></span></span></h3>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Dòng vợt cầu lông Yonex Arcsaber là một trong những dòng vợt được rất nhiều người chơi cầu lông lựa chọn và sử dụng theo lối đánh khác nhau. Từ tấn công, phòng thủ cho tới lối chơi công thủ toàn diện. Đây là một trong những dòng vợt được Yonex ứng dụng những công nghệ hiện đại bậc nhất giúp người chơi dễ dàng điều cầu, phản tạt và kiểm soát cầu một cách tối đa.</span></span></p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Các vật liệu được Yonex sử dụng trong dòng vợt cầu lông Yonex Arcsaber luôn có chất lượng hàng đầu, đảm bảo mang lại hiệu suất tối đa cho từng sản phẩm. Đó là từ công nghệ than chì và Nanometric. Với công nghệ Arcsaber có thể tăng thời gian mặt vợt tiếp xúc với cầu lâu hơn, từ đó làm tăng sự kiểm soát cầu một cách tối đa. Việc tăng thời gian tiếp xúc cũng giúp tích lũy năng lượng cho những pha đập cầu uy lực.</span></span></p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Một số sản phẩm vợt cầu lông Yonex thuộc dòng nanoflare đang được rất nhiều người chơi lựa chọn phải kể đến như: <a href="https://shopvnb.com/vot-cau-long-yonex-arcsaber-7-pro-chinh-hang.html">ARCSABER 7 PRO</a>, ARCSABER 11 PRO...Ngoài ra thì cũng có 1 số dòng vợt cầu lông yonex giá rẻ giá rẻ phải kể đến như Vợt Cầu Lông Yonex Arcsaber 71 Light , Vợt Cầu Lông Yonex Arcsaber 7 Play.</span></span></p>
+
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Một số tay vợt nổi tiếng mang lại thành công cho dòng vợt này như: SAPSIREE TAERATTANACHAI, TAUFIK HIDAYAT, KONG HEE YONG, AARON CHIA.</span></span></p>
+                        <h3 style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><strong>Dòng vợt cầu lông Yonex Duora</strong></span></span></h3>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Dòng vợt cầu lông Yonex Duora là một trong những dòng dây vợt được hãng rất chú trọng và là thế hệ tiếp theo được cải tiến từ dòng vợt ArcSaber. Dòng vợt Duora này kế thừa những tinh hoa của dòng vợt ArcSaber và tiếp nối những công nghệ hiện đại nhất của hãng.&nbsp;</span></span></p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Đặt điểm chung của dòng Vợt Duora là hướng đến lối chơi công thủ toàn diện, dòng vợt được tích hợp công nghệ “hai mặt vợt”, một mặt công và một mặt thủ.</span></span></p>
+
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Một số sản phẩm vợt cầu lông Yonex thuộc dòng nanoflare đang được rất nhiều người chơi lựa chọn phải kể đến như: <a href="https://shopvnb.com/vot-cau-long-yonex-duora-z-strike.html">DUORA Z-STRIKE</a>, DUORA 10, DUORA 10 LT, DUORA 99...</span></span></p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Một số tay vợt nổi tiếng mang lại thành công cho dòng vợt này như: CHOU TIEN CHEN, SATWIKSAIRAJ RANKIREDDY, YUGO KOBAYASHI, ZHENG SI WEI.</span></span></p>
+                        <h2 style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><strong>So sánh vợt cầu lông Yonex với các thương hiệu vợt cầu lông khác</strong></span></span></h2>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Để khẳng định một cách rõ hơn về vị trí đứng đầu thế giới của hãng vợt cầu lông Yonex. Cùng VNB so sánh những sản phẩm vợt cầu lông Yonex với các thương hiệu nổi tiếng khác như Lining, Victor.</span></span></p>
+                        <h3 style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><strong>So sánh vợt cầu lông Yonex và vợt cầu lông Lining</strong></span></span></h3>
+
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">So sánh vợt cầu lông Yonex và <a href="https://shopvnb.com/vot-cau-long-lining.html">vợt cầu lông Lining</a> hay Nên mua vợt Lining hay Yonex so sánh ưu nhược điểm ? là những câu hỏi được nhiều người chơi tìm kiếm. Cùng shopvnb đi vào chi tiết nhé!</span></span></p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Hãng Vợt cầu lông Yonex luôn trang bị dây chuyền sản xuất hiện đại cùng với công nghệ tiên tiến cho ra những sản phẩm chất lượng nhất. Tuy nhiên, đi kèm với sự nổi tiếng và chất lượng đó thì giá tiền của một cây vợt cầu lông Yonex chính hãng cũng khá cao so với mặt bằng chung là tầm 2-3 triệu. Vợt cầu lông Lining có một ưu thế nổi trội đó là mức giá tương đối mềm hơn so với các đối thủ đặc biệt là Yonex. Những sản phẩm của Lining thường được người chơi lựa chọn ở phân khúc tầm 1triệu đến 2 triệu.</span></span></p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Vợt cầu lông Lining nổi tiếng với sơn lì pha màu sắc đẹp, nổi bậc còn vợt cầu lông Yonex thì nổi tiếng với sơn bóng. Về độ bền thì sơn lì của Lining đươc đánh giá cao hơn ở cả về độ bền màu cũng như hạn chế tối đa việc trầy xước trong quá trình sử dụng.</span></span></p>
+
+                        <h3 style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><strong>So sánh vợt cầu lông Yonex và vợt cầu lông Victor</strong></span></span></h3>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Vợt cầu lông Yonex và Victor thực sự là đối thủ lớn của nhau khi mà cả hai đều là những tên tuổi lâu đời trong lĩnh vực cầu lông. Bên cạnh đó là những công nghệ tiến tiến đứng đầu thế giới mà 2 hãng trang bị cho những sản phẩm tung ra thị trường.&nbsp;</span></span></p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Vợt cầu lông Victor có một trong những nhà máy sản xuất lớn nhất trên thế giới. <a href="https://shopvnb.com/vot-cau-long-victor.html">Vợt cầu lông Victor</a> đã được sử dụng bởi những tay vợt nổi tiếng trên thế giới như Gao Ning, Yang Wei, và Zhang JiWen. Hãng Victor cũng hợp tác những bộ phim anime cho ra nhiều sự kết hợp hoàng hỏa như Victor One Piece, Victor Dragon ball...</span></span></p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Tuy nhiên, so với Yonex thì hiện tai Vợt cầu lông Victor có phần yếu thế hơn, những năm trở lại đây&nbsp;hãng Victor cho ra thị trường khá ít sản phẩm so với nhà Yonex. Tuy nhiên, chất lượng và độ hoàng thiện sản phẩm vẫn được đánh giá cao.</span></span></p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Mặc dù đã ra đời cách đây hơn 50 năm nhưng thương hiệu vợt cầu lông Yonex vẫn luôn đứng đầu thế giới về mọi mặt cả về thiết kế lẫn công nghệ cũng như truyền thông. Từ trước đến nay vẫn chưa có một hãng vợt cầu lông nào có thể vượt qua được sức ảnh hưởng của hãng Yonex trong bộ môn cầu lông.</span></span></p>
+                        <h2 style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><strong>Địa chỉ mua bán Vợt cầu lông Yonex chính hãng tại Việt Nam | ShopVNB</strong></span></span></h2>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">ShopVNB là một trong những đại lý lớn nhất mua bán vợt Yonex Việt Nam chính hãng. Với hơn 10 năm kinh nghiệm cũng như hơn 50 chi nhánh trải dài toàn quốc, Shop vợt cầu lông yonex VNB là sự chọn lựa đáng tin cây cho quý khách hàng để lựa chọn những sản phẩm vợt cầu lông Yonex chính hãng. Shop VNB sẽ báo bảng giá vợt cầu lông yonex chuẩn nhất và chính xác nhất cho quý khách hàng.</span></span></p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Đến với hệ thống cửa hàng bán vợt cầu lông VNB, bạn sẽ nhận được những dịch vụ đi kèm tốt nhất. Nhiều chế độ hậu mãi cũng như bảo hành chính hãng với tiêu chí nhanh, gọn, lẹ cho khách hàng.</span></span></p>
+                        <h2><strong><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Bảng giá vợt cầu lông Yonex mới nhất 2024</span></span></strong></h2>
+                        <p><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Hiện nay trên thị trường <strong>Yonex Việt Nam</strong> có rất nhiều sản phẩm vợt cầu lông Yonex với nhiều phân khúc giá vợt cầu lông khác nhau. ShopVNB gửi đến các bạn bảng giá vợt&nbsp;Yonex những sản phẩm hot nhất hiện nay.</span></span></p>
+                        <table border="1" cellpadding="1" cellspacing="1" style="width:786px">
+                            <tbody>
+                                <tr>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><strong>Sản phẩm vợt cầu lông Yonex</strong></span></span></td>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><strong>Giá vợt cầu lông Yonex</strong></span></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><a href="https://shopvnb.com/vot-cau-long-yonex-astrox-77-pro-ma-jp.html">Vợt Cầu Lông Yonex Astrox 77 Pro (Mã JP)</a></span></span></td>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">3.950.000 ₫</span></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><a href="https://shopvnb.com/vot-cau-long-yonex-astrox-77-pro-chinh-hang.html">Vợt Cầu Lông Yonex Astrox 77 Pro Chính Hãng</a></span></span></td>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">3.720.000 ₫</span></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><a href="https://shopvnb.com/vot-cau-long-yonex-arcsaber-7-pro-chinh-hang.html">Vợt Cầu Lông Yonex Arcsaber 7 Pro Chính Hãng</a></span></span></td>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">3.559.000 ₫</span></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><a href="https://shopvnb.com/vot-cau-long-yonex-arcsaber-11-pro-chinh-hang.html">Vợt Cầu Lông Yonex Arcsaber 11 Pro Chính Hãng</a></span></span></td>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">3.910.000 ₫</span></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><a href="https://shopvnb.com/vot-cau-long-yonex-astrox-99-pro-do-chinh-hang.html">Vợt Cầu Lông Yonex Astrox 99 Pro Đỏ Chính Hãng</a></span></span></td>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">4.140.000 ₫</span></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><a href="https://shopvnb.com/vot-cau-long-yonex-astrox-100zz-kurenai-do-new-2021.html">Vợt Cầu Lông Yonex Astrox 100ZZ Kurenai - Đỏ New 2021 Chính Hãng</a></span></span></td>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">4.470.000 ₫</span></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><a href="https://shopvnb.com/vot-cau-long-yonex-astrox-88d-pro-chinh-hang.html">Vợt Cầu Lông Yonex Astrox 88D Pro Chính Hãng</a></span></span></td>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">3.789.000 ₫</span></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><a href="https://shopvnb.com/vot-cau-long-yonex-astrox-6-new-chinh-hang.html">Vợt Cầu Lông Yonex Astrox 6 (BK/LM) Chính Hãng</a></span></span></td>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">1.849.000 ₫</span></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><a href="https://shopvnb.com/vot-cau-long-yonex-astrox-10-dg-nv-tq-chinh-hang.html">Vợt Cầu Lông Yonex Astrox 10 DG (NV/TQ) Chính Hãng</a></span></span></td>
+                                    <td><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">1.940.000 ₫</span></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><strong>Tham khảo thêm:</strong>&nbsp;Bảng <a href="https://shopvnb.com/vot-cau-long.html">giá vợt cầu lông</a>&nbsp;mới nhất.</span></span></p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><strong>Click ngay:</strong>&nbsp;<a href="https://shopvnb.com">ShopVNB</a>&nbsp;- Hệ thống shop cầu lông hàng đầu Việt Nam với <a href="/he-thong-cua-hang"><strong>5 shop Premium và 64</strong>&nbsp;chi nhánh</a> trải dài cả nước - Địa chỉ chuyên&nbsp;<a href="https://shopvnb.com/vot-cau-long.html">bán vợt cầu lông chính hãng</a>&nbsp;và cũng là nơi&nbsp;<a href="https://shopvnb.com/vot-cau-long.html">mua vợt cầu lông giá rẻ</a>&nbsp;toàn quốc.</span></span></p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="column">
+                <h3>
+                    THÔNG TIN CHUNG
+                </h3>
+                <p>
+                    VNB là hệ thống bán lẻ dụng cụ thể thao và sân cầu lông lớn nhất cả nước, các sản phẩm của chúng tôi
+                    luôn được đảm bảo về chất lượng.
+                </p>
+                <p>
+                    VNB cam kết: "Tất cả các sản phẩm VNB bán ra đều là hàng chính hãng và được bảo hành chính hãng".
+                </p>
+                <p>
+                    VNB - "Trải nghiệm sản phẩm chất lượng xuất sắc và dịch vụ tốt nhất Việt Nam".
+                </p>
+            </div>
+            <div class="column">
+                <h3>
+                    THÔNG TIN LIÊN HỆ
+                </h3>
+                <p>
+                    Hệ thống cửa hàng:
+                    <a href="#">
+                        Xem hệ thống cửa hàng
+                    </a>
+                </p>
+                <p>
+                    Kiểm tra đơn hàng VNB:
+                    <a href="#">
+                        Kiểm tra đơn hàng VNB
+                    </a>
+                </p>
+                <p>
+                    Hotline: 0707456140 - 0707456145
+                </p>
+                <p>
+                    Email:
+                    <a href="mailto:info@vnb.com">
+                        info@vnb.com
+                    </a>
+                </p>
+                <p>
+                    Thời gian làm việc: 8:00-17:00
+                </p>
+                <p>
+                    Hỗ trợ ngoài giờ: 0707456145
+                </p>
+            </div>
+            <div class="column">
+                <h3>
+                    CHÍNH SÁCH
+                </h3>
+                <p>
+                    <a href="#">
+                        Chính sách bảo hành/đổi trả
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Chính sách bảo mật
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Chính sách vận chuyển
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Chính sách thanh toán
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Chính sách khách hàng thân thiết
+                    </a>
+                </p>
+            </div>
+            <div class="column">
+                <h3>
+                    HƯỚNG DẪN
+                </h3>
+                <p>
+                    <a href="#">
+                        Hướng dẫn mua hàng trên website
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Hướng dẫn thanh toán
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Hướng dẫn kiểm tra đơn hàng
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Hướng dẫn bảo hành
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Hướng dẫn mua hàng
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>
+            © Công Ty TNHH VNB SPORTS
+        </p>
+        <p>
+            Địa chỉ: 268/20 Lý Thường Kiệt, Phường 14, Quận 10, TP.HCM
+        </p>
+        <p>
+            GPĐKKD số 0314343005 do Sở KH &amp; ĐT TP.HCM cấp ngày 07/05/2017
+        </p>
+        <p>
+            Giấy phép thiết lập trang TMDT số: 2018-0017/ĐK/TMĐT
+        </p>
+        <div class="certification">
+            <img alt="Certification" height="40"
+                src="https://storage.googleapis.com/a1aa/image/8GEDpIg4JfS9P60MUCERdY0Fsz4FrrGVJKEJYwAg8ESfoSnTA.jpg"
+                width="40" />
+            <p>
+                Đã thông báo
+            </p>
+        </div>
+    </div>
+    <a class="cart-button" href="#">
+        Xem giỏ hàng (0)
+    </a>
+</body>
+
+</html>
