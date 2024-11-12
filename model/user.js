@@ -1,52 +1,37 @@
-const mongoose = require("mongoose");
-const bcrypt = require('bcryptjs');  // Cần cài đặt bcryptjs nếu chưa có
-const Schema = mongoose.Schema;
+const mongoose = require('mongoose');
 
-// Định nghĩa UserSchema
-const UserSchema = new Schema(
-  {
-    email: { 
-      type: String, 
-      required: true, 
-      maxLength: 255, 
-      unique: true  // Đảm bảo email là duy nhất trong cơ sở dữ liệu
+// // Kết nối MongoDB
+// mongoose.connect('mongodb://localhost:27017/yourDatabase', {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+// })
+// .then(() => console.log('MongoDB connected'))
+// .catch((err) => console.log('MongoDB connection error:', err));
+
+// Định nghĩa Schema cho User
+const userSchema = new mongoose.Schema(
+    {
+        username: {
+            type: String,
+            required: [true, 'Username is required'],
+        },
+        password: {
+            type: String,
+            required: [true, 'Password is required'],
+        },
+        email: {
+            type: String,
+            required: [true, 'Email is required'],
+        },
     },
-    pass: { 
-      type: String, 
-      required: true, 
-      maxLength: 255 
-    },
-    name: { 
-      type: String, 
-      required: true, 
-      maxLength: 255
-    },
-  },
-  {
-    collection: "User",  // Chỉ định tên collection trong MongoDB
-    timestamps: true  // Tự động tạo các trường createdAt và updatedAt
-  }
+    {
+        collection: 'User',
+        timestamps: true,
+    }
 );
 
-// Mã hóa mật khẩu trước khi lưu vào cơ sở dữ liệu
-UserSchema.pre('save', async function(next) {
-  if (this.isModified('pass') || this.isNew) {
-    try {
-      // Mã hóa mật khẩu với bcrypt
-      const salt = await bcrypt.genSalt(10);
-      this.pass = await bcrypt.hash(this.pass, salt);
-      next();
-    } catch (error) {
-      next(error);  // Xử lý lỗi nếu có
-    }
-  } else {
-    next();
-  }
-});
+// Tạo mô hình User
+const userModel = mongoose.model('User', userSchema);
 
-// Phương thức để so sánh mật khẩu khi đăng nhập
-UserSchema.methods.comparePassword = async function(password) {
-  return await bcrypt.compare(password, this.pass);
-};
-
-module.exports = mongoose.model('User', UserSchema);
+// Xuất mô hình và mongoose
+module.exports = { mongoose, userModel };

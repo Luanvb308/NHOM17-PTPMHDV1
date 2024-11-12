@@ -1,55 +1,56 @@
 // controllers/signup.js
-const userModel = require("../model/user");
+const {userModel} = require("../model/user");
 const bcrypt = require('bcryptjs');  // Nếu cài đặt bcryptjs
 
 // Hàm showSignupPage để render trang signup (GET)
 exports.showSignupPage = (req, res) => {
-    res.render("signup/signup", { msg: "" });  // Render trang signup.ejs
+    res.render("signup", { msg: "" });  // Render trang signup.ejs
 };
 
 // Hàm signup để xử lý đăng ký người dùng (POST)
 exports.signup = async (req, res) => {
+
     let msg = "";
     if (req.method === "POST") {
         // Kiểm tra các trường cần thiết
-        if (!req.body.username || !req.body.passwd || !req.body.email) {
+        if (!req.body.username || !req.body.pass || !req.body.email) {
             msg = "Vui lòng điền đầy đủ thông tin!";
-            return res.render("signup/signup", { msg: msg });
+            return res.render("signup", { msg: msg });
         }
 
-        // Kiểm tra nếu tên người dùng đã tồn tại
-        const checkname = await userModel.findOne({
-            name: req.body.username,  // Chắc chắn rằng bạn đang dùng đúng tên trường
-        });
+        // // Kiểm tra nếu tên người dùng đã tồn tại
+        // const checkname = await userModel.findOne({
+        //     name: req.body.username,  // Chắc chắn rằng bạn đang dùng đúng tên trường
+        // });
 
-        if (checkname) {
-            msg = "Username đã tồn tại.";
-            return res.render("signup/signup", { msg: msg });
-        }
+        // if (checkname) {
+        //     msg = "Username đã tồn tại.";
+        //     return res.render("signup", { msg: msg });
+        // }
 
         // Kiểm tra xem mật khẩu và xác nhận mật khẩu có khớp không
-        if (req.body.passwd !== req.body.confirmpasswd) {
-            msg = "Mật khẩu và xác nhận mật khẩu không khớp.";
-            return res.render("signup/signup", { msg: msg });
-        }
+        // if (req.body.pass !== req.body.confirmpass) {
+        //     msg = "Mật khẩu và xác nhận mật khẩu không khớp.";
+        //     return res.render("signup", { msg: msg });
+        // }
 
         // Kiểm tra định dạng email
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         const email = req.body.email;
         if (!emailRegex.test(email)) {
             msg = "Email không hợp lệ.";
-            return res.render("signup/signup", { msg: msg });
+            return res.render("signup", { msg: msg });
         }
 
         // Mã hóa mật khẩu trước khi lưu vào cơ sở dữ liệu
         const salt = bcrypt.genSaltSync(10);
-        const hashedPassword = await bcrypt.hash(req.body.passwd, salt);
+        const hashedPassword = await bcrypt.hash(req.body.pass, salt);
 
         // Tạo đối tượng người dùng mới và lưu vào cơ sở dữ liệu
         let newUser = new userModel({
-            name: req.body.username,
+            username: req.body.username,
             password: hashedPassword,
-            email: req.body.email,
+            email: req.body.email
         });
 
         try {
@@ -60,10 +61,25 @@ exports.signup = async (req, res) => {
         } catch (err) {
             console.error(err);
             msg = "Đã xảy ra lỗi khi tạo người dùng.";
-            return res.render("signup/signup", { msg: msg });
+            return res.render("signup", { msg: msg });
         }
     }
 
     // Render trang đăng ký với thông báo lỗi nếu có
-    res.render("signup/signup", { msg: msg });
+    res.render("signup", { msg: msg });
 };
+// Hàm in tất cả người dùng trong cơ sở dữ liệu
+ exports.printAllUsers =async()=> {
+    try {
+        // Truy vấn tất cả người dùng từ cơ sở dữ liệu
+        const users = await userModel.find(); // Dùng find() để lấy tất cả người dùng
+
+        // In thông tin người dùng ra console
+        console.log("Tất cả người dùng trong cơ sở dữ liệu:");
+        users.forEach(user => {
+            console.log(`Username: ${user.username}, Email: ${user.email}`);
+        });
+    } catch (err) {
+        console.error("Lỗi khi lấy dữ liệu người dùng:", err);
+    }
+}
