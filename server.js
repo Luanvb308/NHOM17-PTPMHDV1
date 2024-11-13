@@ -45,7 +45,8 @@ connect();
 app.use('/', homeRouter);
 app.use('/login', loginRouter)
 app.use('/signup', signupRouter);
-
+app.use('/product',productRouter);
+app.use('/logout',logoutRouter);
 
 const PORT = 3000;
 app.listen(PORT, () => {
