@@ -43,12 +43,21 @@
            TRA CỨU
           </span>
         
-            <span class="taikhoan">
-                TÀI KHOẢN
-                <ul class="con">
-                    <li><a href="/signup">Đăng nhập</a></li>
-                </ul>
-            </span>
+          
+          <span class="taikhoan">
+            TÀI KHOẢN
+            <ul class="con">
+                <% if (username) { %> <!-- Kiểm tra nếu có username (đã đăng nhập) -->
+                    <li><a href="/logout">Đăng xuất</a></li>  <!-- Nút đăng xuất -->
+                <% } else { %> <!-- Nếu chưa đăng nhập -->
+                    <li><a href="/login">Đăng nhập</a></li>  <!-- Liên kết đăng nhập -->
+                <% } %>
+            </ul>
+        </span>
+        
+       
+        
+        
         
          <a class="cart-icon" href="#">
           <i class="fas fa-shopping-cart">
