@@ -7,6 +7,7 @@ const path = require('path');
 app.use(express.static('public'));
 const {connect} = require('./db/index');
 const homeRouter = require('./routes/index');
+const logoutRouter = require('./routes/logout');
 var loginRouter = require("./routes/login");
 var signupRouter = require("./routes/signup");
 // const HomeController = require('./src/controller/HomeController');
@@ -44,7 +45,7 @@ connect();
 app.use('/', homeRouter);
 app.use('/login', loginRouter)
 app.use('/signup', signupRouter);
-app.use('/product', productRouter); 
+
 
 const PORT = 3000;
 app.listen(PORT, () => {

@@ -68,18 +68,3 @@ exports.signup = async (req, res) => {
     // Render trang đăng ký với thông báo lỗi nếu có
     res.render("signup", { msg: msg });
 };
-// Hàm in tất cả người dùng trong cơ sở dữ liệu
- exports.printAllUsers =async()=> {
-    try {
-        // Truy vấn tất cả người dùng từ cơ sở dữ liệu
-        const users = await userModel.find(); // Dùng find() để lấy tất cả người dùng
-
-        // In thông tin người dùng ra console
-        console.log("Tất cả người dùng trong cơ sở dữ liệu:");
-        users.forEach(user => {
-            console.log(`Username: ${user.username}, Email: ${user.email}`);
-        });
-    } catch (err) {
-        console.error("Lỗi khi lấy dữ liệu người dùng:", err);
-    }
-}

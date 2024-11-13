@@ -43,12 +43,21 @@
            TRA CỨU
           </span>
         
-            <span class="taikhoan">
-                TÀI KHOẢN
-                <ul class="con">
-                    <li><a href="/signup">Đăng nhập</a></li>
-                </ul>
-            </span>
+          
+          <span class="taikhoan">
+            TÀI KHOẢN
+            <ul class="con">
+                <% if (username) { %> <!-- Kiểm tra nếu có username (đã đăng nhập) -->
+                    <li><a href="/logout">Đăng xuất</a></li>  <!-- Nút đăng xuất -->
+                <% } else { %> <!-- Nếu chưa đăng nhập -->
+                    <li><a href="/login">Đăng nhập</a></li>  <!-- Liên kết đăng nhập -->
+                <% } %>
+            </ul>
+        </span>
+        
+       
+        
+        
         
          <a class="cart-icon" href="#">
           <i class="fas fa-shopping-cart">
@@ -73,28 +82,47 @@
       </ul>
     
       <section>
-        <pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </pre>
+        <img src="https://cdn.shopvnb.com/img/1920x640/uploads/slider/astrox88-sd-key-visual-2880x1120-_1718650445.webp" alt="" class="img"> 
+        <div class="container">
+            <div class="card">
+                <i class="fas fa-truck icon"></i>
+                <div class="text">
+                    <strong>Vận chuyển TOÀN QUỐC</strong>
+                    <p>Thanh toán khi nhận hàng</p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-thumbs-up icon"></i>
+                <div class="text">
+                    <strong>Bảo đảm chất lượng</strong>
+                    <p>Sản phẩm bảo đảm chất lượng.</p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-credit-card icon"></i>
+                <div class="text">
+                    <strong>Tiến hành THANH TOÁN</strong>
+                    <p>Với nhiều PHƯƠNG THỨC</p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-credit-card icon"></i>
+                <div class="text">
+                    <strong>Sản phẩm CHÍNH HÃNG</strong>
+                    <p>Với nhiều hãng</p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-exchange-alt icon"></i>
+                <div class="text">
+                    <strong>Đổi sản phẩm mới</strong>
+                    <p>nếu sản phẩm lỗi</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    
       </section>
 
       <div class="footer">
