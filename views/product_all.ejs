@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+         <img alt="Company Logo" height="40" src="https://cdn.shopvnb.com/themes/images/logo.svg" width="40"/>
+         <span>
+          VNB
+         </span>
+        </div>
+        <div class="hotline">
+         <i class="fas fa-phone-alt">
+         </i>
+         <span>
+          HOTLINE: 0977508430 | 0338000308
+         </span>
+        </div>
+        <div class="store-system">
+         <i class="fas fa-map-marker-alt">
+         </i>
+         <span>
+          HỆ THỐNG CỬA HÀNG
+         </span>
+        </div>
+        <div class="search-bar">
+         <input placeholder="Tìm sản phẩm..." type="text"/>
+         <button>
+          <i class="fas fa-search">
+          </i>
+         </button>
+
+        </div>
+        
+          </i>
+          <span>
+           TRA CỨU
+          </span>
+        
+            <span class="taikhoan">
+                TÀI KHOẢN
+                <ul class="con">
+                    <li><a href="/signup">Đăng nhập</a></li>
+                </ul>
+            </span>
+        
+         <a class="cart-icon" href="#">
+          <i class="fas fa-shopping-cart">
+          </i>
+          <span class="badge">
+           0
+          </span>
+          <span>
+           GIỎ HÀNG
+          </span>
+         </a>
+        </div>
+       </div>
+    <ul>
+        <li><a href="#home">Trang chủ </a></li>
+        <li><a href="#news">Sẩn phẩm</a></li>
+        <li><a href="#news">Sale off</a></li>
+        <li><a href="#news">Tin Tức</a></li>
+        <li><a href="#news">Giới thiệu</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+    
+      <section>
+        <p class="product-description"><%= product.description %></p>
+        <p><strong>Độ cứng:</strong> <%= product.hardness %></p>
+        <p><strong>Khung vợt:</strong> <%= product.racketFrame %></p>
+        <p><strong>Cân nặng:</strong> <%= product.weight %>g</p>
+        <p><strong>Cân bằng:</strong> <%= product.balance %></p>
+        <p><strong>Động tác:</strong> <%= product.swing %></p>
+        <p><strong>Sức mạnh tối đa:</strong> <%= product.maxStrength %>kg</p>
+        <p><strong>Màu sắc:</strong> <%= product.color %></p>
+        <p><strong>Nhà sản xuất:</strong> <%= product.manufacture %></p>
+        <p><strong>Thương hiệu:</strong> <%= product.brand %></p>
+        <p><strong>Số lượng:</strong> <%= product.quantity %></p>
+      </section>
+</body>
+</html>

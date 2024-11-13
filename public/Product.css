@@ -1,0 +1,442 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E95211;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: orange;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 2px solid #e74c3c;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+.hotline {
+    display: flex;
+    align-items: center;
+    color: #e74c3c;
+    font-weight: bold;
+}
+.hotline i {
+    margin-right: 5px;
+}
+.store-system {
+    display: flex;
+    align-items: center;
+    color: #333;
+    margin-left: 20px;
+}
+.store-system i {
+    margin-right: 5px;
+    color: #e74c3c;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.search-bar input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+.search-bar button {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    margin-left: -30px;
+    cursor: pointer;
+}
+.icons {
+    display: flex;
+    align-items: center;
+}
+.icons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    color: #333;
+    text-decoration: none;
+}
+.icons  {
+    font-size: 20px;
+    color: #e74c3c;
+}
+.icons  {
+    font-size: 12px;
+    margin-top: 5px;
+}
+.cart-icon {
+    position: relative;
+}
+.cart-icon .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 10px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer .column {
+  width: 23%;
+}
+.footer .column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.footer .column p, .footer .column a {
+  font-size: 14px;
+  color: #ccc;
+  text-decoration: none;
+  line-height: 1.6;
+  transition: color 0.3s;
+}
+.footer .column a:hover {
+  color: #ffcc00;
+}
+.footer .social-icons {
+  display: flex;
+  margin-top: 10px;
+}
+.footer .social-icons i {
+  font-size: 20px;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+.footer .social-icons i:hover {
+  color: #ffcc00;
+}
+.footer-bottom {
+  background-color: #f36f21;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+.footer-bottom .certification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.footer-bottom .certification img {
+  height: 40px;
+  margin-right: 10px;
+}
+.footer-bottom .certification p {
+  margin: 0;
+}
+.footer-bottom .support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.footer-bottom .support a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 20px;
+  transition: color 0.3s;
+}
+.footer-bottom .support a:hover {
+  color: #ffcc00;
+}
+/* Đảm bảo rằng thẻ .taikhoan có position relative */
+.taikhoan {
+  position: relative;
+}
+
+/* Ban đầu ẩn menu con */
+.taikhoan .con {
+  position: absolute;
+  top: 100%; /* Đưa menu xuống dưới */
+  left: 0;
+  list-style: none;
+  height: 40px;
+  display: grid;
+  grid-template-columns: auto;
+  background-color: white;
+  display: none; /* Ẩn menu con */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ */
+}
+
+/* Mỗi item trong danh sách con */
+.con li {
+  height: 40px;
+  width: 100px; /* Đặt chiều rộng của các mục */
+  display: flex;
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
+}
+
+/* Hiển thị menu con khi hover vào .taikhoan */
+.taikhoan:hover .con {
+  display: grid;
+  
+  opacity: 1; /* Menu sẽ dần xuất hiện */
+}
+
+/* Hiệu ứng hover cho từng mục trong menu */
+.taikhoan .con li a:hover {
+  background-color: orange; /* Màu nền khi hover */
+  color: white; /* Màu chữ khi hover */
+}
+
+/* Tùy chỉnh màu sắc và căn chỉnh cho các liên kết trong menu */
+.taikhoan .con a {
+  text-decoration: none;
+  color: #333; /* Màu chữ mặc định */
+  width: 100%;
+  display: block; /* Đảm bảo liên kết chiếm toàn bộ không gian của li */
+ 
+  text-align: center; /* Căn giữa chữ trong liên kết */
+}
+
+/* Hiệu ứng hover cho liên kết */
+.taikhoan .con a:hover {
+  background-color: orange; /* Màu nền của liên kết khi hover */
+  color: white; /* Màu chữ khi hover */
+}
+
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 20%;
+    padding-right: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.sidebar label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sidebar input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.sidebar input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    width: 80%;
+}
+
+.main-content .brands {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.main-content .brands img {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.main-content .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: calc(25% - 20px); /* Chiều rộng của mỗi sản phẩm, trừ đi khoảng cách */
+    box-sizing: border-box; /* Đảm bảo padding và border không làm tăng chiều rộng */
+    background-color: white; /* Nền trắng cho sản phẩm */
+    transition: box-shadow 0.3s; /* Hiệu ứng bóng đổ khi hover */
+}
+
+.product-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bóng đổ khi hover */
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Bo góc cho hình ảnh sản phẩm */
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0; /* Khoảng cách trên và dưới cho tên sản phẩm */
+}
+
+.product-price {
+    color: green;
+    font-size: 16px;
+    font-weight: bold; /* Làm nổi bật giá sản phẩm */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Sidebar chiếm toàn bộ chiều rộng trên màn hình nhỏ */
+        padding-right: 0; /* Bỏ padding bên phải */
+    }
+    
+    .main-content {
+        width: 100%; /* Main content chiếm toàn bộ chiều rộng */
+    }
+
+    .product-item {
+        width: calc(50% - 20px); /* Hai sản phẩm trên một hàng */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        width: 100%; /* Một sản phẩm trên một hàng */
+    }
+
+    .search-bar input {
+        width: 100%; /* Tìm kiếm chiếm toàn bộ chiều rộng */
+    }
+
+    .search-bar button {
+        width: 100%; /* Nút tìm kiếm chiếm toàn bộ chiều rộng */
+    }
+}
+.pagination {
+    display: flex;
+    justify-content: center; /* Căn giữa các nút phân trang */
+    margin: 20px 0; /* Khoảng cách trên và dưới */
+}
+
+.page-link {
+    display: inline-block;
+    margin: 0 5px; /* Khoảng cách giữa các ô */
+    padding: 10px 15px; /* Khoảng cách bên trong ô */
+    border: 1px solid #007bff; /* Đường viền cho ô */
+    border-radius: 5px; /* Bo tròn các góc */
+    text-decoration: none; /* Bỏ gạch chân */
+    color: #007bff; /* Màu chữ */
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển màu nền và màu chữ khi hover */
+    font-weight: bold; /* Đậm cho chữ */
+}
+
+.page-link:hover {
+    background-color: #007bff; /* Màu nền khi hover */
+    color: white; /* Màu chữ khi hover */
+}
+
+.page-link.active {
+    background-color: #007bff; /* Màu nền cho trang đang hoạt động */
+    color: white; /* Màu chữ cho trang đang hoạt động */
+}
+
+/* CSS cho nút chuyển trang */
+.page-nav {
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+    margin: 0 5px; /* Khoảng cách giữa các nút */
+    padding: 10px 15px; /* Khoảng cách bên trong nút */
+    border: 1px solid #007bff; /* Đường viền cho nút */
+    border-radius: 5px; /* Bo tròn các góc */
+    color: #007bff; /* Màu chữ */
+    font-weight: bold; /* Đậm cho chữ */
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển màu nền và màu chữ khi hover */
+}
+
+.page-nav:hover {
+    background-color: #007bff; /* Màu nền khi hover */
+    color: white; /* Màu chữ khi hover */
+}

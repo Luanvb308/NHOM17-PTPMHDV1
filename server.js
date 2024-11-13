@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser'); // Khai báo body-parser
 const session = require('express-session');
+const productRouter = require('./routes/productRouter');
 const app = express();
 const path = require('path');
 app.use(express.static('public'));
@@ -43,7 +44,7 @@ connect();
 app.use('/', homeRouter);
 app.use('/login', loginRouter)
 app.use('/signup', signupRouter);
-
+app.use('/product', productRouter); 
 
 const PORT = 3000;
 app.listen(PORT, () => {
