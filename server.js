@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser'); // Khai báo body-parser
 const session = require('express-session');
 const productRouter = require('./routes/productRouter');
+const LocProductRouter = require('./routes/LocProductRouter');
 const app = express();
 const path = require('path');
 app.use(express.static('public'));
@@ -47,7 +48,7 @@ app.use('/login', loginRouter)
 app.use('/signup', signupRouter);
 app.use('/product',productRouter);
 app.use('/logout',logoutRouter);
-
+app.use('/product',LocProductRouter);
 const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

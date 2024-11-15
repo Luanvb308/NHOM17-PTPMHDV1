@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const productSchema = new mongoose.Schema({
+    _id:{type: String , required : true },
     name: { type: String, required: true },
     hardness: { type: String, required: true },
     racketFrame: { type: String, required: true },
@@ -23,3 +24,8 @@ const productSchema = new mongoose.Schema({
 const Product = mongoose.model('Product', productSchema);
 
 module.exports = Product;
+exports.getProductById = (productId) => {
+    const products = getProductsFromFile();
+    const product = products.find(p => p._id.toString() === productId);
+    console.log(product);
+  };

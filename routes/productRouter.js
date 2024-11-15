@@ -1,9 +1,9 @@
+// routes/productRouter.js
 const express = require('express');
 const router = express.Router();
-const ProductController = require('../controller/ProductController'); // Đường dẫn đến controller
+const ProductController = require('../controller/ProductController');
 
-// Route cho trang sản phẩm
-router.get('/', ProductController.showProductPage); // Route cho trang sản phẩm
+router.get('/', ProductController.showProductPage);
+router.get('/:id', ProductController.getProductDetailsPage);
 
-// Xuất router
 module.exports = router;

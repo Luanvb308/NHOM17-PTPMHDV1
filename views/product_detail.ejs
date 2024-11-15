@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/Product_all.css">
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+         <img alt="Company Logo" height="40" src="https://cdn.shopvnb.com/themes/images/logo.svg" width="40"/>
+         <span>
+          VNB
+         </span>
+        </div>
+        <div class="hotline">
+         <i class="fas fa-phone-alt">
+         </i>
+         <span>
+          HOTLINE: 0977508430 | 0338000308
+         </span>
+        </div>
+        <div class="store-system">
+         <i class="fas fa-map-marker-alt">
+         </i>
+         <span>
+          HỆ THỐNG CỬA HÀNG
+         </span>
+        </div>
+        <div class="search-bar">
+         <input placeholder="Tìm sản phẩm..." type="text"/>
+         <button>
+          <i class="fas fa-search">
+          </i>
+         </button>
+
+        </div>
+        
+          </i>
+          <span>
+           TRA CỨU
+          </span>
+        
+            <span class="taikhoan">
+                TÀI KHOẢN
+                <ul class="con">
+                    <li><a href="/signup">Đăng nhập</a></li>
+                </ul>
+            </span>
+        
+         <a class="cart-icon" href="#">
+          <i class="fas fa-shopping-cart">
+          </i>
+          <span class="badge">
+           0
+          </span>
+          <span>
+           GIỎ HÀNG
+          </span>
+         </a>
+        </div>
+       </div>
+    <ul>
+        <li><a href="/home">Trang chủ </a></li>
+        <li><a href="/product">Sản phẩm</a></li>
+        <li><a href="/product_detail">Sale off</a></li>
+        <li><a href="#news">Tin Tức</a></li>
+        <li><a href="#news">Giới thiệu</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+      <div class="container">
+        <div class="left-column">
+         <div class="product-image">
+          <img alt="<%= product.image %>" height="600" id="main-image" src="<%= product.image %>" width="300"/>
+         </div>
+         <div class="thumbnail-images">
+          <img alt="Thumbnail 1" class="selected" height="50" onclick="changeImage('https://storage.googleapis.com/a1aa/image/SR0MQZgpNAYoPxWmM6l2w9nysyzoSQcWW1OPZWY9cT9XoI8E.jpg')" src="https://storage.googleapis.com/a1aa/image/SR0MQZgpNAYoPxWmM6l2w9nysyzoSQcWW1OPZWY9cT9XoI8E.jpg" width="50"/>
+          <img alt="Thumbnail 2" height="50" onclick="changeImage('<%= product.image %>')" src="<%= product.image %>" width="50"/>
+          <img alt="Thumbnail 3" height="50" onclick="changeImage('<%= product.image %>')" src="<%= product.image %>" width="50"/>
+          <img alt="Thumbnail 4" height="50" onclick="changeImage('<%= product.image %>')" src="<%= product.image %>" width="50"/>
+         </div>
+        </div>
+        <div class="right-column">
+         <div class="product-details">
+          <h1>
+            <%= product.name %>
+          </h1>
+          <p>
+           Mã:
+           <span style="color: #ff4500;">
+            <%= product._id %>
+           </span>
+          </p>
+          <p>
+           Thương hiệu:
+           <span style="color: #ff4500;">
+            <%= product.brand %>
+           </span>
+           | Tình trạng:
+           <span class="availability">
+            Còn hàng
+           </span>
+          </p>
+          <p class="price">
+            <%= product.price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' }) %>
+          </p>
+         </div>
+         <div class="product-options">
+          <div class="option-group">
+           <label>
+            Chọn [Phiên bản]:
+           </label>
+           <input checked="" id="warranty" name="version" type="radio"/>
+           <label for="warranty">
+            Có bảo hành
+            <span style="color: #ff4500;">
+              <%= product.price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' }) %>
+            </span>
+           </label>
+          </div>
+          <div class="option-group">
+           <label>
+            Chọn [Màu sắc]:
+           </label>
+           <input checked="" id="black" name="color" type="radio"/>
+           <label for="black">
+            <img alt="black" height="30" src="<%= product.image %>" width="30"/>
+            Đen
+            <span style="color: #ff4500;">
+              <%= product.price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' }) %>
+            </span>
+           </label>
+           <input id="white" name="color" type="radio"/>
+           <label for="white">
+            <img alt="White" height="30" src="<%= product.image %>" width="30"/>
+            Trắng
+            <span style="color: #ff4500;">
+              <%= product.price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' }) %>
+            </span>
+           </label>
+          </div>
+          <div class="option-group size-options">
+           <label>
+            Chọn [Size]:
+           </label>
+           <input id="4u5" name="size" type="radio"/>
+           <label for="4u5">
+            4U5
+           </label>
+           <input id="4u6" name="size" type="radio"/>
+           <label for="4u6">
+            4U6
+           </label>
+           <input id="3u5" name="size" type="radio"/>
+           <label for="3u5">
+            3U5
+           </label>
+           <input id="3u6" name="size" type="radio"/>
+           <label for="3u6">
+            3U6
+           </label>
+          </div>
+         </div>
+         <div class="promotion">
+          <h3>
+           <i class="fas fa-gift">
+           </i>
+           ƯU ĐÃI
+          </h3>
+          <ul>
+           <li>
+            <i class="fas fa-check">
+            </i>
+            Tặng 2 Quấn cán vợt Cầu Lông: VNB 001, VS002 hoặc Joto 001
+           </li>
+           <li>
+            <i class="fas fa-check">
+            </i>
+            VNB cam kết chính hãng
+           </li>
+           <li>
+            <i class="fas fa-check">
+            </i>
+            Một số sản phẩm sẽ được tặng bao đựng hoặc bao nhung bảo vệ vợt
+           </li>
+           <li>
+            <i class="fas fa-check">
+            </i>
+            Thanh toán sau khi kiểm tra và nhận hàng (Giao khung vợt)
+           </li>
+           <li>
+            <i class="fas fa-check">
+            </i>
+            Bảo hành chính hãng theo nhà sản xuất (Trừ hỏng hóc địa, xước sơn)
+           </li>
+          </ul>
+         </div>
+         <div class="actions">
+          <label for="quantity">
+           Thêm số lượng sản phẩm:
+          </label>
+          <div class="quantity-selector">
+           <button onclick="decreaseQuantity()">
+            -
+           </button>
+           <input id="quantity" min="1" type="number" value="1"/>
+           <button onclick="increaseQuantity()">
+            +
+           </button>
+          </div>
+          <div class="button-container">
+           <button class="buy-now">
+            Mua ngay
+           </button>
+           <button class="add-to-cart">
+            Thêm vào giỏ hàng
+           </button>
+           <button class="payment">
+            Thanh toán thẻ
+           </button>
+           <button class="installment">
+            Trả góp
+           </button>
+          </div>
+         </div>
+         <p><%= product.description %></p>
+        </div>
+       </div>
+      <script>
+        function increaseQuantity() {
+            var quantityInput = document.getElementById('quantity');
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        }
+
+        function decreaseQuantity() {
+            var quantityInput = document.getElementById('quantity');
+            if (quantityInput.value > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        }
+
+        function changeImage(src) {
+            var mainImage = document.getElementById('main-image');
+            mainImage.src = src;
+        }
+      </script>
+</body>
+</html>
